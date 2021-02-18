@@ -1,0 +1,13 @@
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    <div *ngFor = "let glass of glasses" class="col">
+      <div class="card h-100">
+        <img  src={{glass.img}} class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">{{glass.about}}</p>
+          <a routerLink="/lens" (click) = "update(glass)"  class="btn btn-primary">select</a>
+        </div>
+      </div>
+    </div>
+    
+   

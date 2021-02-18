@@ -1,0 +1,9 @@
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    <div *ngFor = "let l of lensList" class="col">
+      <div  class="card h-100">
+        <div class="card-body">
+          <h1>{{l}}</h1>
+          <button (click)="update(l)" routerLink="/nambers" class="btn btn-primary">select</button>
+        </div>
+      </div>
+    </div>

@@ -1,0 +1,5 @@
+<input #rl class="form-control" type="text" placeholder="Right side lens number" >
+<input #ll class="form-control" type="text" placeholder="left side lens number">
+<input #rc class="form-control" type="text" placeholder="Right side cylinder number" >
+<input #lc class="form-control" type="text" placeholder="left side cylinder number" >
+<a routerLink="/order" (click)="update (rl.value,ll.value, rc.value, lc.value)" class="btn btn-primary">send</a>
